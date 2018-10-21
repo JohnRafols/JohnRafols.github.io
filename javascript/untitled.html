@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Metamorphosis - Chapter 3</title>
+	<!-- Gonna have to review this...
+		https://www.w3schools.com/bootstrap4/
+	-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+	<link rel="stylesheet" type="text/css" href="css/mycss.css"> 
+
+
+	<script src="javascript/jquery-3.3.1.min.js"></script>
+	<script src="javascript/popper.min.js" ></script>
+	<script src = "javascript/bootstrap.min.js"></script>
+
+	<!-- For Screen Movement -->
+	<script src = "javascript/jquery.scrollpath.js"></script> 
+	<!-- https://stackoverflow.com/questions/45969059/jquery-scrolling-vertical-horizontal -->
+
+
+	<!-- For Slide Animations -->
+	<script src = "javascript/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/js/lib/greensock/TweenMax.min.js"></script>
+	<script type="text/javascript" src="scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+	<script type="text/javascript" src="scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+	<script type="text/javascript" src="scrollmagic/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
+	<script type="text/javascript" src="scrollmagic/scrollmagic/minified/plugins/animation.velocity.min.js"></script>
+
+	<script src = "javascript/mycode.js"></script>
+
+
+</head>
+<body class= "bg-dark">
+
+<!-- All html is being generated here -->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+	<span class="navbar-brand navbar-text text-white">
+   	 	The Metamorphosis of Gregor Samson
+    </span>
+  <!-- Links -->
+   <ul class="navbar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link" href="main.html">Chapter 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="chapter2.html">Chapter 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Chapter 3</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="scrollmagictutorial.html">Debug Room</a>
+    </li>
+  </ul>
+
+</nav>
+
+
+<div class="container h-100">
+
+
+	<div class="row fullscreenPanel" id= "intro">
+		<div class="col-md-12 align-self-center text-center">
+			"The following morning"
+		</div>
+	</div>
+
+	<!--  -->
+	<div class="row fullscreenPanel motionComicWrapper">
+		<div class="col-md-12 d-flex flex-column justify-content-center text-center " >
+			<img src="artwork/final/41.JPG" class="imgFullWidth">
+		</div>
+
+		<div class="overlappingMovement d-flex align-items-center">
+				<img src="artwork/final/42.JPG" class="imgFullWidth">
+		</div>
+		<div class="overlappingMovement  d-flex align-items-center">
+					<img src="artwork/final/43.JPG" class="imgFullWidth">
+		</div>
+		<!-- delay -->
+		<div class="overlappingMovement d-flex flex-column justify-content-center text-center">
+			<span class="panelHeader bg-light" style="height: 120px;"> 	
+				It then hit her, she heard the cries of her brother.
+			</span>						
+			<img src="artwork/final/44.JPG" class="imgFullWidth">
+		</div>
+		<div class="overlappingMovement d-flex flex-column justify-content-center text-center">
+			<span class="panelHeader bg-light" style="height: 120px;"> 	
+				If this truly her brother...
+			</span>			
+					<img src="artwork/final/45.JPG" class="imgFullWidth">
+		</div>
+		<div class="overlappingMovement d-flex flex-column justify-content-center text-center">
+			<span class="panelHeader bg-light" style="height: 120px;"> 	
+				Then her care has been holding her back.
+			</span>							
+			<img src="artwork/final/46.JPG" class="imgFullWidth">
+		</div>
+		<div class="overlappingMovement  d-flex align-items-center">
+					<img src="artwork/final/47.JPG" class="imgFullWidth">
+		</div>
+		<div class="overlappingMovement  d-flex align-items-center">
+					<img src="artwork/final/48.JPG" class="imgFullWidth">
+		</div>
+		
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 d-flex flex-column justify-content-center text-center " >
+				<img src="artwork/final/49.JPG" class="imgFullWidth">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 d-flex flex-column justify-content-center text-center " >
+				<img src="artwork/final/50.JPG" class="imgFullWidth">
+		</div>
+	</div>
+
+	<!-- <div class="row">
+		<div class="col-md-12 d-flex flex-column justify-content-center text-center " >
+				<img src="artwork/final/42.JPG" class="imgFullWidth">
+		</div>
+	</div>
+
+	<div class="row fullscreenPanel motionComicWrapper">
+		<div class="col-md-12 d-flex flex-column justify-content-center text-center " >
+			<img src="artwork/final/43.JPG" class="imgFullWidth">
+		</div>
+
+		<div class="overlappingMovement d-flex align-items-center">
+				<img src="artwork/final/44.JPG" class="imgFullWidth">
+		</div>
+		<div class="overlappingMovement  d-flex align-items-center">
+					<img src="artwork/final/45.JPG" class="imgFullWidth">
+		</div>
+		<div class="overlappingMovement  d-flex align-items-center">
+					<img src="artwork/final/43.JPG" class="imgFullWidth">
+		</div>
+		<div class="overlappingMovement  d-flex align-items-center">
+					<img src="artwork/final/44.JPG" class="imgFullWidth">
+		</div>
+		<div class="overlappingMovement  d-flex align-items-center">
+					<img src="artwork/final/45.JPG" class="imgFullWidth">
+		</div>
+			<div class="overlappingMovement  d-flex align-items-center">
+					<img src="artwork/final/45.JPG" class="imgFullWidth">
+		</div>
+	</div>
+
+	<div class="row fullscreenPanel expositionHeader">
+		<div class="col-md-12 align-self-center text-center" >
+			 "...Gregor, you"
+			 <a class="nav-link" href="chapter3.html">Chapter 3</a>
+		</div>
+	</div> -->
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
