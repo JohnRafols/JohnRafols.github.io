@@ -61,11 +61,13 @@ img {
   border-style: solid;
   border-width: 3px;
   width: 100%;
-  background-color: #6c757d !important;
+  background-color: #f8f9fa !important;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px; }
 
 .expositionHeader {
   min-height: 40%;
