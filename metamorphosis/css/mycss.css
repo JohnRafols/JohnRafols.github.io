@@ -29,7 +29,9 @@ img {
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none; }
+  user-drag: none;
+  border-style: solid;
+  border-width: 3px; }
 
 /*
 	This is due to the fixed-top navbar
@@ -46,9 +48,8 @@ img {
   /*For debugging*/ }
 
 #intro {
-  background-color: #6c757d;
-  border-style: solid;
-  border-width: 1px; }
+  padding: 150px;
+  color: rgba(255, 255, 255, 0.5); }
 
 .imgFullWidth {
   /*for the full image..*/
@@ -58,8 +59,9 @@ img {
   min-height: 10%;
   height: 10%;
   border-style: solid;
-  border-width: 1px;
+  border-width: 3px;
   width: 100%;
+  background-color: #6c757d !important;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -68,10 +70,11 @@ img {
 .expositionHeader {
   min-height: 40%;
   height: 40%;
-  border-style: solid;
-  border-width: 1px;
-  background-color: #6c757d;
-  padding: 50px; }
+  padding: 150px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
 /*
 
