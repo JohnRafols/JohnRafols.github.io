@@ -6,6 +6,7 @@
 
 body{
   overflow: scroll;
+
 }
 
 #horizontalParallaxContainer{
@@ -16,6 +17,10 @@ body{
   width: 600%;
   height:100vh;
   max-height: 2048px;
+
+  background: #2980B9; 
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
 }
 
 .parallaxElement{
