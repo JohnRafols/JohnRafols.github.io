@@ -1,0 +1,146 @@
+/*
+
+  For illustration course
+
+*/
+
+body{
+  overflow: scroll;
+}
+
+#horizontalParallaxContainer{
+  display: flex;
+  justify-content: space-between;
+  position:relative;
+  /*the width will depend on the number of images:*/
+  width: 600%;
+  height:100vh;
+  max-height: 2048px;
+}
+
+.parallaxElement{
+  background-attachment: fixed;
+  position:relative;
+  width:3534px;
+  height:100vh;
+}
+
+.parallaxImg{
+  position: absolute;
+  display: inline-block;
+  width: auto;
+  height: 100vh;
+  max-height: 2048px;
+  max-width: 3534px;
+}
+
+/*.parallaxImg:hover{
+    background-color: yellow;
+}*/
+
+
+/*.
+
+  Section Backgrounds:
+
+}*/
+
+#somes3 {
+  background-image: url("../artwork/somes3.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: grey
+}
+
+
+#testbg {
+  background-image: url("../artwork/testbg.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*
+Gonna need SASS to handle if statements..
+
+#testbg h1{
+  color:red;
+  transition: width 2s;
+}*/
+
+
+/*
+  The first and Last section need to be identical in order to give the illussion of an infinite website.
+}*/
+#section1, #sectionLast {
+  background-image: url("../artwork/section1/1.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#section2{
+  background-image: url("../artwork/section2/1.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#section3{
+  background-image: url("../artwork/section3/1.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#section4{
+  background-image: url("../artwork/section4/1.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#section5{
+  background-image: url("../artwork/section5/1.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+/*.
+
+  Image Experimentation:
+
+}*/
+
+
+.showImg{
+  background-image: url("../artwork/testshow.PNG");
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+
+}
+
+.hideImg{
+  background-image: url("../artwork/testhide.PNG");
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+}
+
+.backImg{
+  background-image: url("../artwork/testbackwards.PNG");
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+}
+

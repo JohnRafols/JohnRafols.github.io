@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Parallax Test </title>
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+	<link rel="stylesheet" type="text/css" href="css/parallax.css"> 
+
+	<!-- <script src="javascript/jquery-3.3.1.min.js"></script> -->
+
+	<!-- For some reason, all scripts related to Parallax needs to be at the bottom of <body> -->
+	<!-- https://stackoverflow.com/questions/16993693/continuous-looping-page-not-infinite-scroll-->
+
+	
+</head>
+
+
+<body>
+
+
+	
+
+	 <div id = "horizontalParallaxContainer" data-stellar-offset-parent="true"> 
+
+		<div class="parallaxElement" data-stellar-background-ratio="1" data-stellar-offset-parent="true" id="section1"  > 
+				<img class="parallaxImg" data-stellar-ratio="2" src = "artwork/section1/2.PNG" >
+				<img class="parallaxImg" data-stellar-ratio="-1.4" src = "artwork/section1/3.PNG" style="z-index: -2" >
+				<img class="parallaxImg" data-stellar-ratio="-2" src = "artwork/section1/4.PNG" >
+			   	<img class="parallaxImg" data-stellar-ratio="1" src = "artwork/section1/5.PNG" >
+		</div>
+
+
+
+		<div class="parallaxElement" data-stellar-background-ratio="1" data-stellar-offset-parent="true" id="section2"> 
+				<!-- back mountain -->
+				<img class="parallaxImg" data-stellar-ratio="1.2" src = "artwork/section2/2.PNG" style="z-index: -1" >
+				<!-- Fence -->
+				<img class="parallaxImg" data-stellar-ratio="1.4" src = "artwork/section2/3.PNG" style="z-index: 1" >
+				<!-- rock thing -->
+				<img class="parallaxImg" data-stellar-ratio="1" src = "artwork/section2/4.PNG" style="z-index: 2" >
+		</div>
+
+
+
+		<div class="parallaxElement" data-stellar-background-ratio="1" data-stellar-offset-parent="true" id="section3"> 
+				<!-- background trees -->
+				<img class="parallaxImg" data-stellar-ratio="1.2" src = "artwork/section3/2.PNG" style="z-index: -1" >
+				<!-- grass -->
+				<img class="parallaxImg" data-stellar-ratio="1.5" src = "artwork/section3/3.PNG" style="z-index: 2" >
+
+		</div>
+		
+
+		<!-- really stubborn part... -->
+		<div class="parallaxElement" data-stellar-background-ratio="1" data-stellar-offset-parent="true" id="section4"> 
+				<!-- <img class="parallaxImg" data-stellar-ratio="1" src = "artwork/section4/1.PNG" style="z-index: -1" > -->
+		</div>
+		
+
+		<div class="parallaxElement" data-stellar-background-ratio="1" data-stellar-offset-parent="true" id="section5"> 
+			<!-- need to fix.. -->
+			<img class="parallaxImg" data-stellar-ratio="1.2" src = "artwork/section5/2.PNG" style="z-index: -2; top: 3vh;" >
+		</div>
+		
+		
+
+
+		<!-- Experiment w/ zoom in parallax effect
+		https://webdesignerwall.com/tutorials/zoom-hero-images-scroll -->
+
+		<!-- Note: this is identical to the first section -->
+		<div class="parallaxElement" data-stellar-background-ratio="1" data-stellar-offset-parent="true" id="sectionLast"> 
+				<!-- <div data-stellar-ratio = "2" style="position:absolute"> <h1> Watch this move with Parallax </h1> </div> -->
+				<!-- <div data-stellar-ratio = "-1" style="position:absolute"> <h1> Watch this move with Parallax </h1> </div> -->
+				<img class="parallaxImg" data-stellar-ratio="2" src = "artwork/section1/2.PNG" >
+				<img class="parallaxImg" data-stellar-ratio="-1.4" src = "artwork/section1/3.PNG" style="z-index: -2" >
+				<img class="parallaxImg" data-stellar-ratio="-2" src = "artwork/section1/4.PNG" >
+			   	<img class="parallaxImg" data-stellar-ratio="1" src = "artwork/section1/5.PNG" >
+		</div>
+
+
+	</div>
+
+
+
+
+
+	<script src="javascript/jquery-2.0.2.js"></script>
+	<script src="javascript/popper.min.js" ></script>
+	<script src="javascript/bootstrap.min.js"></script>
+	<!-- Library for Parallax effect -->
+	<script src = "javascript/jquery.stellar.min.js"></script>
+	<!-- Code for Parallax effect -->
+	<script src="javascript/parallaxIllustration.js"></script>
+	
+</body>
+
+
+</html>

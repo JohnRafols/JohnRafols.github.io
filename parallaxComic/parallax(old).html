@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Parallax Test </title>
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+	<link rel="stylesheet" type="text/css" href="css/parallax.css"> 
+
+	<!-- <script src="javascript/jquery-3.3.1.min.js"></script> -->
+
+	<!-- For some reason, all scripts related to Parallax needs to be at the bottom of <body> -->
+	<!-- https://stackoverflow.com/questions/16993693/continuous-looping-page-not-infinite-scroll-->
+
+	
+</head>
+
+
+<body>
+
+	<!-- Basic Vertical Parallax:
+
+		<div class="parallaxImg" id="somes3"> 
+			<p>
+				<h1> Text Section 1 with Parallax </h1>
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+			</p>
+		</div>
+
+		<div class="parallaxImg" id="test1" data-stellar-background-ratio="0.5"> 
+			<p>
+				<h1> Text Section 2 with Parallax </h1>
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+			</p>
+		</div>
+
+		<div class="parallaxImg" id="test1" data-stellar-background-ratio="0.5"> 
+			<p>
+				<h1> Text Section 2 with Parallax </h1>
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+			</p>
+		</div>
+			
+		<div class="parallaxImg" id="test2" data-stellar-background-ratio="0.5"> 
+			<p>
+				<h1> Text Section 3 with Parallax </h1>
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+			</p>
+		</div> -->
+
+
+	<!-- Template code: 
+
+
+	 <div id = "horizontalParallaxContainer" data-stellar-offset-parent="true"> 
+
+		<div class="parallaxElement" data-stellar-background-ratio="1" data-stellar-offset-parent="true" id="somes3"> 
+				<img class="parallaxImg" data-stellar-ratio="-1" src = "artwork/testshow.PNG" >
+ 			    <img class="parallaxImg" data-stellar-ratio="0.5" src = "artwork/somes1.PNG"> 
+			    <img class="parallaxImg" data-stellar-ratio="1" src = "artwork/somes1.PNG"> 
+			   
+		</div>
+
+
+		<div class="parallaxElement" id="testbg" data-stellar-background-ratio="1" data-stellar-offset-parent="true" data-stellar-horizontal-offset="0"> 
+			<div class="parallaxElement hideImg" data-stellar-horizontal-offset="0" data-stellar-background-ratio="-1.5"></div> 
+			<div class="parallaxElement backImg" data-stellar-horizontal-offset="0" data-stellar-background-ratio="2"></div> 
+			<div class="parallaxElement showImg" data-stellar-horizontal-offset="0" data-stellar-background-ratio="-1"></div> 
+		</div>
+
+			
+		<div class="parallaxElement" id="test2" data-stellar-background-ratio="1" div data-stellar-offset-parent="true"
+		data-stellar-horizontal-offset="0"> 
+			<div class="parallaxElement hideImg" data-stellar-horizontal-offset="0" data-stellar-background-ratio="-1.5"></div> 
+			<div class="parallaxElement backImg" data-stellar-horizontal-offset="0" data-stellar-background-ratio="2"></div> 
+			<div class="parallaxElement showImg" data-stellar-horizontal-offset="0" data-stellar-background-ratio="-1"></div> 
+				 		
+		</div>
+
+	</div> -->
+
+
+	 <div id = "horizontalParallaxContainer" data-stellar-offset-parent="true"> 
+
+		<div class="parallaxElement" data-stellar-background-ratio="1" data-stellar-offset-parent="true" id="section1"> 
+				<!-- <div data-stellar-ratio = "2" style="position:absolute"> <h1> Watch this move with Parallax </h1> </div> -->
+				<div data-stellar-ratio = "-1" style="position:absolute"> <h1> Watch this move with Parallax </h1> </div>
+				<img class="parallaxImg" data-stellar-ratio="2" src = "artwork/section1/2.PNG" >
+				<img class="parallaxImg" data-stellar-ratio="-1.4" src = "artwork/section1/3.PNG" style="z-index: -2" >
+				<img class="parallaxImg" data-stellar-ratio="-2" src = "artwork/section1/4.PNG" >
+			   	<img class="parallaxImg" data-stellar-ratio="1.2" src = "artwork/section1/5.PNG" >
+		</div>
+
+
+		<div class="parallaxElement" id="testbg" data-stellar-background-ratio="1" data-stellar-offset-parent="true" data-stellar-horizontal-offset="0"> 
+			<div class="parallaxElement hideImg" data-stellar-horizontal-offset="0" data-stellar-background-ratio="-1.5"></div> 
+			<div class="parallaxElement backImg" data-stellar-horizontal-offset="0" data-stellar-background-ratio="2"></div> 
+			<div class="parallaxElement showImg" data-stellar-horizontal-offset="0" data-stellar-background-ratio="-1"></div> 
+		</div>
+
+
+		<!-- Experiment w/ zoom in parallax effect
+		https://webdesignerwall.com/tutorials/zoom-hero-images-scroll -->
+
+		<!-- Note: this is identical to the first section -->
+		<div class="parallaxElement" data-stellar-background-ratio="1" data-stellar-offset-parent="true" id="sectionLast"> 
+				<div data-stellar-ratio = "-1" style="position:absolute"> <h1> Watch this move with Parallax </h1> </div>
+				<img class="parallaxImg" data-stellar-ratio="2" src = "artwork/section1/2.PNG" >
+				<img class="parallaxImg" data-stellar-ratio="-2" src = "artwork/section1/3.PNG" style="z-index: -2" >
+				<img class="parallaxImg" data-stellar-ratio="-2" src = "artwork/section1/4.PNG" >
+			   	<img class="parallaxImg" data-stellar-ratio="1.2" src = "artwork/section1/5.PNG" >
+		</div>
+
+
+	</div>
+
+
+
+
+
+	<script src="javascript/jquery-2.0.2.js"></script>
+	<script src="javascript/popper.min.js" ></script>
+	<script src="javascript/bootstrap.min.js"></script>
+	<!-- Library for Parallax effect -->
+	<script src = "javascript/jquery.stellar.min.js"></script>
+	<!-- Code for Parallax effect -->
+	<script src="javascript/parallaxIllustration.js"></script>
+	
+</body>
+
+
+</html>
