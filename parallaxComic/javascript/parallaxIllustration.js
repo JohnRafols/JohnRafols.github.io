@@ -37,8 +37,9 @@ $(window).load(function(){
 
 window.onscroll = function(ev) {
 	var limit = document.getElementById("sectionLast").getBoundingClientRect().x
+	console.log(limit)
     if (limit <= 0) {
-        //console.log("you're at the corner of the page");
+        console.log("you're at the corner of the page");
         window.scrollTo(0, 0);
     }
 };

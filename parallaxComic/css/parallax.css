@@ -36,6 +36,7 @@ body:after{
       background-size: cover;
 }
 
+
 #horizontalParallaxContainer{
   display: flex;
   justify-content: space-between;
@@ -46,15 +47,18 @@ body:after{
   max-height: 2048px;
 
   background: #2980B9; 
-background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
-background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
 }
 
 .parallaxElement{
   background-attachment: fixed;
   position:relative;
+  display: inline-block;
+
   width:3534px;
   height:100vh;
+  /*border: 3px solid red;*/
 }
 
 .parallaxImg{
@@ -62,13 +66,15 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
   display: inline-block;
   width: auto;
   height: 100vh;
+
   max-height: 2048px;
   max-width: 3534px;
+
+  overflow: auto;
+    /*border: 3px solid black;*/
+
 }
 
-/*.parallaxImg:hover{
-    background-color: yellow;
-}*/
 
 
 /*.
@@ -103,7 +109,7 @@ Gonna need SASS to handle if statements..
 /*
   The first and Last section need to be identical in order to give the illussion of an infinite website.
 }*/
-#section1, #sectionLast {
+/*#section1, #sectionLast {
   background-image: url("../artwork/section1/1.PNG");
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,7 +138,7 @@ Gonna need SASS to handle if statements..
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+*/
 
 
 /*.
