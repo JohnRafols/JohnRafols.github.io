@@ -10,10 +10,10 @@ $(window).load(function(){
 	$.stellar({
 	    horizontalScrolling: true,
 	    verticalScrolling: false,
-	    hideElement: function($elem) { 
-	    	$elem.hide(); 
-	    },
-	    hideDistantElements: true,
+	    // hideElement: function($elem) { 
+	    // 	$elem.hide(); 
+	    // },
+	    hideDistantElements: false,
 	    responsive: true
 
 	});
