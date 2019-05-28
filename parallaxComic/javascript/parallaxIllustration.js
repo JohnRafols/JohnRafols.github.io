@@ -74,7 +74,7 @@ window.onscroll = function(ev) {
 
     //Gotta hide this till the right moment...
     var basicMessage5 = document.getElementById("section3").getBoundingClientRect().right
-    if ( (basicMessage5 >= -300 && basicMessage5 <= 700)) {
+    if ( (basicMessage5 >= -300 && basicMessage5 <= 600)) {
         $('#basicMessage5').fadeIn();
     } else{
         $('#basicMessage5').fadeOut();
