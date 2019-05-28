@@ -159,13 +159,14 @@ Gonna need SASS to handle if statements..
 }*/
 
 .comicPanelFormat{
+  position: absolute;
   font-size: 12px;
   position:absolute;
   border: 2px solid black;
   padding: 10px;
   background-color: white;
   border-radius: .4em;
-  overflow: hidden;
+  /*overflow: hidden;*/
   white-space: nowrap;
   z-index: 10;
 
@@ -177,15 +178,32 @@ Gonna need SASS to handle if statements..
 }
 
 #basicMessage2{
-  margin-top: 5%;
-  margin-left: 20%;
+  margin-top: 10%;
+  margin-left: 15%;
 }
 
 #basicMessage3{
-   margin-top: 8%;
-  margin-left: 20%;
+  margin-top: 20%;
+  margin-left: 60%;
+  z-index: -2;
 }
 
+#basicMessage4{
+  margin-top: 15%;
+  margin-left: 60%;
+  z-index: -2;
+}
+
+#basicMessage5{
+  margin-top: 10%;
+  margin-left: 60%;
+  z-index: -2;
+}
+
+#basicMessage6{
+  margin-top: 15%;
+  margin-left: 8%;
+}
 
 
 /*.

@@ -10,13 +10,21 @@ $(window).load(function(){
 	$.stellar({
 	    horizontalScrolling: true,
 	    verticalScrolling: false,
+
+
 	    // hideElement: function($elem) { 
 	    // 	$elem.hide(); 
 	    // },
 	    hideDistantElements: false,
 	    responsive: true
 
+
 	});
+
+	//Hide some stuff onload
+	// $('#basicMessage2').hide();
+	// $('#basicMessage3').hide();
+	$('#basicMessage5').hide();
 
 })
 
@@ -46,13 +54,34 @@ window.onscroll = function(ev) {
     // This code is for hiding/showing speech bubbles:
 
 
-    var speechBubbleLimit = document.getElementById("section1").getBoundingClientRect().right
-    if (speechBubbleLimit <= 600) {
+    var basicMessage1 = document.getElementById("section1").getBoundingClientRect().right
+    if (basicMessage1 <= 600) {
         $('#basicMessage1').fadeOut();
     }
-    else if (speechBubbleLimit >= 0) {
+    else if (basicMessage1 >= 0) {
     	$('#basicMessage1').fadeIn();
     }
+
+    var basicMessage2 = document.getElementById("section2").getBoundingClientRect().right
+    // console.log(speechBubble2)
+    if (basicMessage2 <= 600) {
+        $('#basicMessage2').fadeOut();
+    }
+    else if (basicMessage2 >= 0) {
+    	$('#basicMessage2').fadeIn();
+    }
+
+
+    //Gotta hide this till the right moment...
+    var basicMessage5 = document.getElementById("section3").getBoundingClientRect().right
+    if ( (basicMessage5 >= -300 && basicMessage5 <= 700)) {
+        $('#basicMessage5').fadeIn();
+    } else{
+        $('#basicMessage5').fadeOut();
+    }
+    
+
+
 
 };
 
