@@ -159,6 +159,7 @@ Gonna need SASS to handle if statements..
 }*/
 
 .comicPanelFormat{
+  display: inline-block;
   position: absolute;
   font-size: 12px;
   position:absolute;
@@ -203,6 +204,8 @@ Gonna need SASS to handle if statements..
 #basicMessage6{
   margin-top: 15%;
   margin-left: 8%;
+  z-index: -2;
+
 }
 
 
