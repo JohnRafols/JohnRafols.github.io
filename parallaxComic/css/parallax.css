@@ -181,7 +181,7 @@ Gonna need SASS to handle if statements..
 #basicMessage2{
   margin-top: 10%;
   margin-left: 15%;
-  z-index: 5;
+  z-index: -3;
 }
 
 #basicMessage3{

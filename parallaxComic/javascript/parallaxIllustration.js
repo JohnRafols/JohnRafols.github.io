@@ -51,13 +51,13 @@ window.onscroll = function(ev) {
     // This code is for hiding/showing speech bubbles:
 
 
-    var basicMessage1 = document.getElementById("section1").getBoundingClientRect().right
-    if (basicMessage1 <= 600) {
-        $('#basicMessage1').fadeOut();
-    }
-    else if (basicMessage1 >= 0) {
-    	$('#basicMessage1').fadeIn();
-    }
+    // var basicMessage1 = document.getElementById("section1").getBoundingClientRect().right
+    // if (basicMessage1 <= 600) {
+    //     $('#basicMessage1').fadeOut();
+    // }
+    // else if (basicMessage1 >= 0) {
+    // 	$('#basicMessage1').fadeIn();
+    // }
 
     var basicMessage2 = document.getElementById("section2").getBoundingClientRect().right
     // console.log(speechBubble2)
