@@ -8,6 +8,14 @@
   overflow: scroll;
 }*/
 
+@font-face {
+  font-family: 'BackIssuesBB_reg';
+  src: url("BackIssuesBB_reg.ttf"), url("BackIssuesBB_reg.ttf") format("truetype"); }
+html, body {
+  height: 100%;
+  font-family: 'BackIssuesBB_reg'; 
+}
+
 body {
     overflow: scroll;
     background: url(...) no-repeat center center fixed; 
@@ -43,13 +51,14 @@ body:after{
   position:relative;
   /*the width will depend on the number of images:*/
   width: 600%;
+  /*Temporary fix...*/
   width: 8802px;
   height: auto;
   max-height: 2048px;
 
   background: #2980B9; 
-  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
-  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9, #6DD5FA, #FFFFFF, #FFFFFF); 
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9, #6DD5FA, #FFFFFF, #FFFFFF); 
 }
 
 .parallaxElement{
@@ -140,6 +149,43 @@ Gonna need SASS to handle if statements..
   background-repeat: no-repeat;
 }
 */
+
+
+
+/*.
+
+  Text CSS
+
+}*/
+
+.comicPanelFormat{
+  font-size: 12px;
+  position:absolute;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: white;
+  border-radius: .4em;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 10;
+
+}
+
+#basicMessage1{
+  margin-top: 5%;
+  margin-left: 8%;
+}
+
+#basicMessage2{
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+#basicMessage3{
+   margin-top: 8%;
+  margin-left: 20%;
+}
+
 
 
 /*.

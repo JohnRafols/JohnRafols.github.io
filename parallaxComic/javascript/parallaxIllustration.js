@@ -37,10 +37,24 @@ $(window).load(function(){
 
 window.onscroll = function(ev) {
 	var limit = document.getElementById("sectionLast").getBoundingClientRect().x
-	console.log(limit)
     if (limit <= 0) {
         console.log("you're at the corner of the page");
+        $('#basicMessage1').fadeIn();
         window.scrollTo(0, 0);
     }
+
+    // This code is for hiding/showing speech bubbles:
+
+
+    var speechBubbleLimit = document.getElementById("section1").getBoundingClientRect().right
+    if (speechBubbleLimit <= 600) {
+        $('#basicMessage1').fadeOut();
+    }
+    else if (speechBubbleLimit >= 0) {
+    	$('#basicMessage1').fadeIn();
+    }
+
 };
+
+
 
