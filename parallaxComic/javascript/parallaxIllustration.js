@@ -23,6 +23,8 @@ $(window).load(function(){
 	// $('#basicMessage3').hide();
 	$('#basicMessage5').hide();
 
+    $('#hidingBirds').hide();
+
 })
 
 
@@ -71,12 +73,28 @@ window.onscroll = function(ev) {
 
     //Gotta hide this till the right moment...
     var basicMessage5 = document.getElementById("section3").getBoundingClientRect().right
-    if ( (basicMessage5 >= -300 && basicMessage5 <= 600)) {
+
+    console.log(basicMessage5)
+
+    if ((basicMessage5 >= -300 && basicMessage5 <= 600)) {
+        console.log('show!')
         $('#basicMessage5').fadeIn();
+        $('#hidingBirds').fadeIn();
+
     } else{
+
         $('#basicMessage5').fadeOut();
+
+        if(basicMessage5 < 0){
+
+        }
+        else{
+            $('#hidingBirds').fadeOut();
+        }
+
     }
     
+
 
 
 
